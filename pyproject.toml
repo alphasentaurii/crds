@@ -158,6 +158,7 @@ markers = [
   "checksum",
   "cmdline",
   "core: tests in the crds.core module",
+  "diff",
   "distortion: all tests related to distortion filetype",
   "heavy_client",
   "list",
