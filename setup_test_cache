@@ -11,18 +11,21 @@ fi
 export CRDS_PATH=$CRDS_TEST_ROOT/crds-cache-default-test
 export CRDS_TESTING_CACHE=$CRDS_TEST_ROOT/crds-cache-test
 
-hstcontexts=(hst.pmap 
-hst_0001.pmap 
-hst_0628.pmap 
-hst_0633.pmap 
-hst_0978.pmap
-hst_0980.pmap
+hstcontexts=(hst.pmap
+hst_0001.pmap
+hst_0294.pmap
 hst_0315.pmap
 hst_0379.pmap
 hst_0500.pmap
 hst_0508.pmap
-hst_0294.pmap
+hst_0628.pmap 
+hst_0633.pmap
+hst_0691.pmap
+hst_0772.pmap
+hst_0779.pmap
 hst_0857.pmap
+hst_0978.pmap
+hst_0980.pmap
 hst_1099.pmap
 hst_acs_biasfile_0005.rmap
 hst_acs_biasfile_0250.rmap)
