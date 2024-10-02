@@ -742,7 +742,10 @@ class ContextsScript(Script):
         elif config.get_crds_env_context():
             contexts = [self.resolve_context(config.get_crds_env_context())]
         else:
-            contexts = [self.resolve_context(self.observatory + "-operational")]
+            try:
+                contexts = [self.resolve_context(self.observatory + "-latest")]
+            except Exception:
+                contexts = [self.resolve_context(self.observatory + "-operational")]
         log.verbose("Determined contexts: ", contexts, verbosity=55)
         return sorted(contexts)
 
