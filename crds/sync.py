@@ -305,7 +305,7 @@ class SyncScript(cmdline.ContextsScript):
         if self.args.save_pickles:
             self.pickle_contexts(self.contexts)
 
-        # update CRDS cache config area,  including stored version of operational context.
+        # update CRDS cache config area,  including stored version of latest context.
         # implement pipeline support functions of context update verify and echo
         # If --output-dir was specified,  do not update cache config.
         if self.args.output_dir:
@@ -452,9 +452,9 @@ class SyncScript(cmdline.ContextsScript):
         except AttributeError:
             new_context = heavy_client.load_server_info(self.observatory).operational_context
         if old_context == new_context:
-            log.error("Expected operational context switch but starting and post-sync contexts are both", repr(old_context))
+            log.error("Expected latest context switch but starting and post-sync contexts are both", repr(old_context))
         else:
-            log.info("Operational context updated from", repr(old_context), "to",  repr(new_context))
+            log.info("Latest context updated from", repr(old_context), "to",  repr(new_context))
 
     def push_context(self):
         """Push the final context recorded in the local cache to the CRDS server so it can be displayed
