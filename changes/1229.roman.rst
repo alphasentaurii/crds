@@ -1,0 +1,1 @@
+Adds WFI_IM_DARK, WFI_SP_DARK to list of valid roman exp_types
