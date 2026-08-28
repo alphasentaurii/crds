@@ -1,3 +1,22 @@
+13.2.9 (2026-08-28)
+===================
+
+HST
+---
+
+- Add initial rmap and tpns for new reference file type: STIS BLAZETAB
+  (CCD-1765) (`#1226 <https://github.com/spacetelescope/crds/issues/1226>`_)
+
+
+ROMAN
+-----
+
+- Adds WFI_IM_DARK, WFI_SP_DARK to list of valid roman exp_types (`#1229
+  <https://github.com/spacetelescope/crds/issues/1229>`_)
+- add new reftype wfi BAM (`#1230
+  <https://github.com/spacetelescope/crds/issues/1230>`_)
+
+
 13.2.7 (2026-07-15)
 ===================
 
